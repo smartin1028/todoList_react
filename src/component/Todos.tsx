@@ -28,40 +28,50 @@ const Todos = () => {
         // const handleRemove = (id:number)
 
         const handleRemove = (id: number) => {
-            console.log("====================1======================")
-            console.log(todos.filter((todo) => todo.id !== id));
-            console.log("====================2======================")
-            console.log(todos.filter((todo) => todo.id === id));
-            console.log("====================3======================")
+            function showLog() {
+                console.log("====================1======================")
+                console.log(todos.filter((todo) => todo.id !== id));
+                console.log("====================2======================")
+                console.log(todos.filter((todo) => todo.id === id));
+                console.log("====================3======================")
+            }
 
+            showLog();
 
-            setTodos(todos.filter((todo) => todo.id !== id))
+            // setTodos(todos.filter((todo) => todo.id !== id))
 
+            setTodos((todos) => todos.filter((todo) => todo.id !== id))
         };
         const handleToggle = (id: number) => {
-            setTodos(
-                todos.map((todo) =>
+            // setTodos(
+            //     todos.map((todo) =>
+            //             todo.id === id ? {...todo, done: !todo.done} : todo
+            //
+            //             // if(todo.id === id) todo.done = !todo.done;
+            //         // todo.id === id ? {...todo, done: !todo.done }
+            //         // todo.id === id ? (...todo, done: !todo.done )
+            //
+            //     )
+            // );
 
-                        // if(todo.id === id) todo.done = !todo.done;
-                        todo.id === id ? {...todo, done: !todo.done} : todo
-                    // todo.id === id ? {...todo, done: !todo.done }
-                    // todo.id === id ? (...todo, done: !todo.done )
-
-                )
+            setTodos((todos) =>
+                todos.map((todo) => todo.id === id ? {...todo, done: !todo.done} : todo)
             );
+
+            function checkFunction() {
+                let test
+                todos.map((todo) => todo.id === id ? (test = {...todo, done: !todo.done}) : todo)
+                console.log(test)
+            }
+
+               // data check 함수 결과 확인용
+//             checkFunction();
+
         }
 
         const handleClearAll = () => {
-            setTodos([]);
+            setTodos(()=>[]);
         }
-
-
-        // const [todos] = useState([
-        //         {id: 1, text: "todolteml", done: true},
-        //         {id: 2, text: "todoltem2", done: false},
-        //         {id: 3, text: "todoltem3", done: false}
-        //     ]
-        // );
 
         return (
             <div>
