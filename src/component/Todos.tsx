@@ -2,12 +2,14 @@ import TodoHeader from "./TodoHeader";
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
 import TodoFooter from "./TodoFooter";
-import {useCallback, useRef, useState} from "react";
+import React, {useCallback, useRef, useState} from "react";
 import {Todo} from "../App";
 
 const Todos = () => {
         const nextId = useRef(1);
         const [todos, setTodos] = useState<Todo[]>([]);
+        const [input, setInput] = useState("");
+
 
         const handleInsert = useCallback((text: string) => {
             const todo = {
@@ -23,14 +25,7 @@ const Todos = () => {
             setTodos((todos) => todos.concat(todo));
             // setTodos((todos) => {return todos.concat(todo)});
             nextId.current += 1;
-        },[]);
-
-
-
-        // const handleRemove = (id:number)
-        const aaa = useCallback(() => {
-
-        },[]);
+        }, []);
 
         const handleRemove = useCallback((id: number) => {
 
@@ -42,7 +37,7 @@ const Todos = () => {
 
             // setTodos(todos.filter((todo) => todo.id !== id))
             setTodos((todos) => todos.filter((todo) => todo.id !== id))
-        },[]);
+        }, []);
 
         const handleToggle = useCallback((id: number) => {
             // setTodos(
@@ -66,16 +61,27 @@ const Todos = () => {
             console.log(test)
 
 
-        },[]);
+        }, []);
 
         const handleClearAll = useCallback(() => {
             setTodos(() => []);
-        },[]);
+        }, []);
+
+
+        const handleChange = useCallback((e:React.ChangeEvent<HTMLInputElement>) => {
+            setInput(e.target.value);
+        }, []);
+        const handleSubmit = useCallback((e:React.FormEvent<HTMLFormElement>) => {
+            e.preventDefault();
+            handleInsert(input);
+            setInput("");
+        }, [handleInsert, input]);
+
 
         return (
             <div>
                 <TodoHeader></TodoHeader>
-                <TodoInput onInsert={handleInsert}></TodoInput>
+                <TodoInput input={input} onChnage={handleChange} onSubmit={handleSubmit}></TodoInput>
                 <TodoList todos={todos} onRemove={handleRemove} onToggle={handleToggle}/>
                 <TodoFooter onClearAll={handleClearAll}></TodoFooter>
             </div>
