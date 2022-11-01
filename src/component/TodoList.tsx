@@ -32,8 +32,11 @@ const TodoList = () => {
             {(value) => (
                 <div className={styles.list}>
                     {value.state.todos.map((todo) => (
-                            <TodoItem todo={todo} key={todo.id} onRemove={value.actions.handleRemove}
-                                      onToggle={value.actions.handleToggle}/>
+                            <TodoItem todo={todo}
+                                      key={todo.id}
+                                      onRemove={value.actions.handleRemove}
+                                      onToggle={value.actions.handleToggle}
+                            />
                         )
                     )}
                 </div>

@@ -18,7 +18,6 @@ import {TodoConsumer} from "../context/todo";
 const TodoFooter = () => {
     return (
         <TodoConsumer>
-
             {
                 (value) => (
                     <div className={styles.footer}>
