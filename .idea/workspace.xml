@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc1da7f-c4e0-4e4d-9a28-f9507ced4a3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/todoList_react.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/TodoFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoFooter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +35,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667302668131</updated>
-      <workItem from="1667302669403" duration="460000" />
+      <workItem from="1667302669403" duration="2110000" />
     </task>
     <servers />
   </component>

@@ -1,32 +1,14 @@
 import styles from "../Todo.module.css";
-import {TodoConsumer} from "../context/todo";
-//
-//
-// interface Props{
-//     readonly onClearAll: () => void;
-// }
-//
-// const TodoFooter = ({onClearAll}:Props) => {
-//     return (
-//         <div className={styles.footer}>
-//             <button onClick={()=>onClearAll()}>모두 삭제</button>
-//         </div>
-//     );
-//
-// };
+import TodoContext from "../context/todo";
+import {useContext} from "react";
+
 
 const TodoFooter = () => {
+    const {actions} = useContext(TodoContext);
     return (
-        <TodoConsumer>
-            {
-                (value) => (
-                    <div className={styles.footer}>
-                        <button onClick={()=>value.actions.handleClearAll()}>모두 삭제</button>
-                    </div>
-                )
-            }
-
-        </TodoConsumer>
+        <div className={styles.footer}>
+            <button onClick={() => actions.handleClearAll()}>모두 삭제</button>
+        </div>
     );
 
 };
