@@ -1,5 +1,4 @@
-import React from 'react';
-import Todos from "./component/Todos";
+import TodosContainer from "./containers/TodosContainer";
 export interface Todo {
     id: number;
     text: String;
@@ -7,11 +6,7 @@ export interface Todo {
 }
 
 function App() {
-  return (
-    <div>
-      <Todos/>
-    </div>
-  );
+  return <TodosContainer />
 }
 
 export default App;

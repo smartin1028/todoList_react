@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc1da7f-c4e0-4e4d-9a28-f9507ced4a3e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Todos.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/TodoFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/TodoInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/TodoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoFooter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Todos.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +27,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GwbbvmbaLIKqrLyoQwHaigLHbF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
@@ -30,11 +40,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
+    "last_opened_file_path": "/Users/daewonlee/dev/git/repos/todoList_react/todoList_react/src/modules",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "/Users/daewonlee/dev/git/repos/todoList_react/todoList_react/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/modules" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -55,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667302668131</updated>
-      <workItem from="1667302669403" duration="2110000" />
+      <workItem from="1667302669403" duration="11920000" />
     </task>
     <servers />
   </component>
