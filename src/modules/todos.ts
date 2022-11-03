@@ -1,6 +1,5 @@
 import {Todo} from "../App";
-import TodoItem from "../components/TodoItem";
-// /src/modules/todos.ts
+
 const CHANGE_TODO_INPUT = "CHANGE_TODO_INPUT" as const;
 const ADD_TODO = "ADD_TODO" as const;
 const TOGGLE_TODO_STATUS = "TOGGLE_TODO_STATUS" as const;
